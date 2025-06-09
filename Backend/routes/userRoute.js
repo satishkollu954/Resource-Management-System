@@ -8,12 +8,10 @@ router.post("/add-user", userController.createUser);
 //login user
 router.post("/login", userController.loginUser);
 
-//getting the user for forget password and login aslo
-// router.get("/get-users", userController.getUser);
-
 //getting all users excluding login user
 router.get("/get-users/:email", userController.getUserExcludingLoginUser);
 
+//passwrod reset request
 router.post("/reset", userController.resetPassword);
 
 //passoword reset
